@@ -2,7 +2,7 @@ import axios from 'axios'
 import uuid from 'uuid'
 
 const uuidv4 = uuid.v4
-const BACKEND_API_URL='http://safe-path.herokuapp.com/api/v0'
+const BACKEND_API_URL='http://live-data-covid.herokuapp.com/api/v0'
 const random = (min, max) => (Math.random() * (min - max) + max).toFixed(6)
 
 // longitude: random(30.463379, 30.466379),
