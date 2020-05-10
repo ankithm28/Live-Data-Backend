@@ -15,7 +15,7 @@
     "lint": "eslint \"src/**/*.js\" --config .eslintrc",
     "mock": "node --experimental-modules ./mock/send-locations.js"
   },
-  "author": "Dmytro Shvaika",
+  "author": "Ankith Madadi",
   "license": "MIT",
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^2.4.2",

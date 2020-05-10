@@ -83,8 +83,9 @@ export default async (req, res) => {
               distanceField: 'distance',
               spherical: true,
               maxDistance: parseInt(INTERSECTION_DISTANCE, 10),
-              limit: 100000,
             },
+            
+          }, { $limit: 100000 
           }, {
             $group: {
               _id: '$device',
