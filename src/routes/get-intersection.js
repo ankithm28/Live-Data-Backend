@@ -105,7 +105,6 @@ export default async (req, res) => {
               device: { $push: '$device' },
             },
           },
-          { $limit: 100000 }, 
         ])
 
         if (intersected.length > 0 && intersected[0].count > 0) {
