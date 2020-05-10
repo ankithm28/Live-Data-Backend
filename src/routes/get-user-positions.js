@@ -27,8 +27,8 @@ export default async (req, res) => {
         distanceField: 'distance',
         spherical: true,
         maxDistance: data.radius,
-        limit: 100000,
       },
+    }, { $limit: 100000 
     }, {
       $match: {
         createdAt: {
