@@ -10,11 +10,12 @@ Main backend requests:
 
 `GET https://live-data-covid19.herokuapp.com/api/v0/get-user-positions?radius={{RADIUS}}&latitude={{LATITUDE}}&longitude={{LONGITUDE}}&uuid={{UUID}}`
 
-List of APIS/Services:
+List of APIs/Services:
 
-- Mapbox
-- MongoDB Atlas
-- Google Places
-- Open Route
-- HERE
-- Redis
+- Mapbox (Provides map and allows for temporary geocoding)
+- MongoDB Atlas ($200 credit from Github Developer Student Pack)
+- Google Places ($200 monthly credit to spend on)
+- Open Route (Limit of 250,000 monthly requests, no way to upgrade, provides routing for free, since google maps is expensive)
+- HERE (Limit of 5000 monthly users, no way to upgrade unless contacting company, provides dynamically generated routes to avoid crowds of people )
+- Redis (No Cost, I think)
+- Heroku (No Cost, I think)
