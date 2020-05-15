@@ -28,7 +28,7 @@ const convertHours = hour => {
 }
 
 // JS      Monday-1 Tuesday-2 ... Sunday-7
-// Mongodb Sunday-1 Monday-2 ... Saturday-7
+// MongoDB Sunday-1 Monday-2 ... Saturday-7
 const dayOfWeeks = {
   1: 7,
   2: 1,

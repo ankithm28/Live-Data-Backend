@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "6970b498-d304-4aa0-8b86-0d221b4271bf",
-		"name": "safe-path",
+		"_postman_id": "daeb8bbd-bf53-4ba0-b1b5-703a9bf2e276",
+		"name": "livedata",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -27,9 +27,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{SAFE_PATH_API_BASE_URL}}/api/v0/save-my-location",
+					"raw": "http://live-data-covid19.herokuapp.com/api/v0/save-my-location",
+					"protocol": "http",
 					"host": [
-						"{{SAFE_PATH_API_BASE_URL}}"
+						"live-data-covid19",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -46,9 +49,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{SAFE_PATH_API_BASE_URL}}/api/v0/get-intersection?uuid=1f834ee7-7165-4566-9ded-a60b87cbc1f7",
+					"raw": "http://live-data-covid19.herokuapp.com/api/v0/get-intersection?uuid=1f834ee7-7165-4566-9ded-a60b87cbc1f7",
+					"protocol": "http",
 					"host": [
-						"{{SAFE_PATH_API_BASE_URL}}"
+						"live-data-covid19",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -71,9 +77,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{SAFE_PATH_API_BASE_URL}}/api/v0/get-user-positions?uuid=520a03ce-3561-4be5-ae3b-27beb9b096f2&longitude=30.462979&radius=1000&latitude=50.518102",
+					"raw": "http://live-data-covid19.herokuapp.com/api/v0/get-user-positions?uuid=520a03ce-3561-4be5-ae3b-27beb9b096f2&longitude=30.462979&radius=1000&latitude=50.518102",
+					"protocol": "http",
 					"host": [
-						"{{SAFE_PATH_API_BASE_URL}}"
+						"live-data-covid19",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -108,9 +117,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{SAFE_PATH_API_BASE_URL}}/api/v0/places?radius=1000&latitude=50.518102&placeType=spaaa&longitude=30.462979",
+					"raw": "http://live-data-covid19.herokuapp.com/api/v0/places?radius=1000&latitude=50.518102&placeType=spa&longitude=30.462979",
+					"protocol": "http",
 					"host": [
-						"{{SAFE_PATH_API_BASE_URL}}"
+						"live-data-covid19",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
@@ -128,7 +140,7 @@
 						},
 						{
 							"key": "placeType",
-							"value": "spaaa"
+							"value": "spa"
 						},
 						{
 							"key": "longitude",
@@ -145,14 +157,17 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{SAFE_PATH_API_BASE_URL}}/api/v0/places?startLatitude=30.462979&startLongitude=50.518102&endLatitude=30.468664&endLongitude=50.517698",
+					"raw": "http://live-data-covid19.herokuapp.com/api/v0/get-route?startLatitude=30.462979&startLongitude=50.518102&endLatitude=30.468664&endLongitude=50.517698",
+					"protocol": "http",
 					"host": [
-						"{{SAFE_PATH_API_BASE_URL}}"
+						"live-data-covid19",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
 						"v0",
-						"places"
+						"get-route"
 					],
 					"query": [
 						{
@@ -182,15 +197,23 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{SAFE_PATH_API_BASE_URL}}/api/v0/busy-times/749460162",
+					"raw": "http://live-data-covid19.herokuapp.com/api/v0/busy-times?placeId=ChIJpQP2H7HLj4AR_gUbxOt_aIY",
+					"protocol": "http",
 					"host": [
-						"{{SAFE_PATH_API_BASE_URL}}"
+						"live-data-covid19",
+						"herokuapp",
+						"com"
 					],
 					"path": [
 						"api",
 						"v0",
-						"busy-times",
-						"749460162"
+						"busy-times"
+					],
+					"query": [
+						{
+							"key": "placeId",
+							"value": "ChIJpQP2H7HLj4AR_gUbxOt_aIY"
+						}
 					]
 				}
 			},
